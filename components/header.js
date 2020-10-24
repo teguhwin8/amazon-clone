@@ -1,12 +1,12 @@
 import Link from 'next/link'
 import SearchIcon from "@material-ui/icons/Search"
 import ShoppingBasketIcon from "@material-ui/icons/ShoppingBasket"
-import styles from '../styles/Home.module.css'
+import styles from '../styles/Header.module.css'
 
 function header() {
   return (
     <div className={styles.header}>
-			<Link to="/">
+			<Link href="/">
 				<img
 					src="http://pngimg.com/uploads/amazon/amazon_PNG25.png"
 					alt=""
@@ -21,21 +21,21 @@ function header() {
 			</div>
 			<div className={styles.header__nav}>
 				<div className={styles.header__option}>
-					<span className="header__optionLineOne">Hello Guest</span>
-					<span className="header__optionLineTwo">Sign In</span>
+					<span className={styles.header__optionLineOne}>Hello Guest</span>
+					<span className={styles.header__optionLineTwo}>Sign In</span>
 				</div>
-				<div className="header__option">
-					<span className="header__optionLineOne">Return</span>
-					<span className="header__optionLineTwo">& Order</span>
+				<div className={styles.header__option}>
+					<span className={styles.header__optionLineOne}>Return</span>
+					<span className={styles.header__optionLineTwo}>& Order</span>
 				</div>
-				<div className="header__option">
-					<span className="header__optionLineOne">Your</span>
-					<span className="header__optionLineTwo">Prime</span>
+				<div className={styles.header__option}>
+					<span className={styles.header__optionLineOne}>Your</span>
+					<span className={styles.header__optionLineTwo}>Prime</span>
 				</div>
-				<Link to="/checkout">
-					<div className="header__optionBasket">
+				<Link href="/checkout">
+					<div className={styles.header__optionBasket}>
 						<ShoppingBasketIcon />
-						<span className="header__optionLineTwo header__basketCount">
+						<span className={styles.header__optionLineTwo.header__basketCount}>
 							0
 						</span>
 					</div>
