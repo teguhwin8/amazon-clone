@@ -1,0 +1,25 @@
+.slider {
+  height: calc(100vh - 60px);
+  position: relative;
+}
+
+.slider img {
+	width: 100%;
+	height: calc(100vh - 60px);
+	object-fit: cover;
+	
+}
+
+.slider::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  height: 100px;
+  z-index: 1;
+  -moz-box-shadow: 0 0 30vh 35vh #fff;
+	-webkit-box-shadow: 0 0 30vh 35vh #fff;
+  box-shadow: 0 0 30vh 35vh #fff;
+  background-color: #fff;
+}
